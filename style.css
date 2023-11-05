@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    background-image: url('https://www.sitecentre.com.au/uploads/2021/07/famous-logo-designers-what-they-got-right.jpg');
+    filter: blur(8px);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    height: 4.5rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+h1{
+    position: absolute;
+    top: 45%;
+    font: bolder 40px sans-serif;
+    left: 33%;
+    color: brown;
+}
+i{
+    color: white;
+    font-size: larger;
+    display: none;
+}
+.container img{
+    width: 90px;
+    mix-blend-mode: multiply;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+li{
+    list-style: none;
+    margin-right: 2rem;
+    color: white;
+    font:  bold 18px sans-serif;
+    cursor: pointer;
+}
+
+.change .list-container {
+    display: flex;
+    flex-direction: column;
+
+}
+/*Responsive Design*/
+@media screen and (max-width:450px)
+{
+    .list-container li{
+        display: none;
+    }
+    i{
+        display: block;
+        font-size: xx-large;
+    }
+}
